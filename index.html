@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>1的乘法</h2>
+    <ul id="ul1"></ul>
+    <h2>2的乘法</h2>
+    <ul id="ul2"></ul>
+    <h2>3的乘法</h2>
+    <ul id="ul3"></ul>
+    <h2>4的乘法</h2>
+    <ul id="ul4"></ul>
+    <h2>5的乘法</h2>
+    <ul id="ul5"></ul>
+    </>
+</body>
+</html>
+<script>
+const el = document.querySelector("#ul1");
+const el2=document.querySelector("#ul2");
+const el3 = document.querySelector("#ul3");
+const el4=document.querySelector("#ul4");
+const el5=document.querySelector("#ul5");
+for(let i=1;i<11;i++){
+    let str1 = document.createElement("li");
+    let str2 = document.createElement("li");
+    let str3 = document.createElement("li");
+    let str4 = document.createElement("li");
+    let str5 = document.createElement("li");
+    str1.textContent =`1*${i}=${1*i}`;
+    str2.textContent =`2*${i}=${2*i}`;
+    str3.textContent =`3*${i}=${3*i}`;
+    str4.textContent =`4*${i}=${4*i}`;
+    str5.textContent =`5*${i}=${5*i}`;
+    el.appendChild(str1);
+    el2.appendChild(str2);
+    el3.appendChild(str3);
+    el4.appendChild(str4);
+    el5.appendChild(str5);
+}
+// const el12=document.querySelector("#ul2");
+// for(let i=1;i<11;i++){
+//     let strt= document.createElement("li");
+//     strt.textContent =`2*${i}=${2*i}`;
+//     el12.appendChild(strt);
+// }
+</script>
