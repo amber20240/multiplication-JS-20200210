@@ -11,9 +11,7 @@
         <h1>乘法</h1>
         <div class="div">
                 <h2>1的乘法</h2>
-                 <div class="div2">
                      <ul id="ul1"></ul>
-                 </div>
         </div>
         <div class="div">
                 <h2>2的乘法</h2>
@@ -58,60 +56,70 @@
         <div class="div">
                 <h2>12的乘法</h2>
                 <ul id="ul12"></ul>
-        </div>
+        </div> 
     </div>  
 </body>
 </html>
 <script>
-const el =document.querySelector("#ul1");
-const el2=document.querySelector("#ul2");
-const el3=document.querySelector("#ul3");
-const el4=document.querySelector("#ul4");
-const el5=document.querySelector("#ul5");
-const el6=document.querySelector("#ul6");
-const el7=document.querySelector("#ul7");
-const el8=document.querySelector("#ul8");
-const el9=document.querySelector("#ul9");
-const el10=document.querySelector("#ul10");
-const el11=document.querySelector("#ul11");
-const el12=document.querySelector("#ul12");
+// 第一次寫的時候太冗長,可往下看精簡版
+// const el =document.querySelector("#ul1");
+// const el2=document.querySelector("#ul2");
+// const el3=document.querySelector("#ul3");
+// const el4=document.querySelector("#ul4");
+// const el5=document.querySelector("#ul5");
+// const el6=document.querySelector("#ul6");
+// const el7=document.querySelector("#ul7");
+// const el8=document.querySelector("#ul8");
+// const el9=document.querySelector("#ul9");
+// const el10=document.querySelector("#ul10");
+// const el11=document.querySelector("#ul11");
+// const el12=document.querySelector("#ul12");
+// for(let i=1;i<11;i++){
+//     let str1 = document.createElement("li");
+//     let str2 = document.createElement("li");
+//     let str3 = document.createElement("li");
+//     let str4 = document.createElement("li");
+//     let str5 = document.createElement("li");
+//     let str6 = document.createElement("li");
+//     let str7 = document.createElement("li");
+//     let str8 = document.createElement("li");
+//     let str9 = document.createElement("li");
+//     let str10 = document.createElement("li");
+//     let str11 = document.createElement("li");
+//     let str12 = document.createElement("li");
+//     str1.textContent =`1*${i}=${1*i}`;
+//     str2.textContent =`2*${i}=${2*i}`;
+//     str3.textContent =`3*${i}=${3*i}`;
+//     str4.textContent =`4*${i}=${4*i}`;
+//     str5.textContent =`5*${i}=${5*i}`;
+//     str6.textContent =`6*${i}=${6*i}`;
+//     str7.textContent =`7*${i}=${7*i}`;
+//     str8.textContent =`8*${i}=${8*i}`;
+//     str9.textContent =`9*${i}=${9*i}`;
+//     str10.textContent =`10*${i}=${10*i}`;
+//     str11.textContent =`11*${i}=${11*i}`;
+//     str12.textContent =`12*${i}=${12*i}`;
+//     el.appendChild(str1);
+//     el2.appendChild(str2);
+//     el3.appendChild(str3);
+//     el4.appendChild(str4);
+//     el5.appendChild(str5);
+//     el6.appendChild(str6);
+//     el7.appendChild(str7);
+//     el8.appendChild(str8);
+//     el9.appendChild(str9);
+//     el10.appendChild(str10);
+//     el11.appendChild(str11);
+//     el12.appendChild(str12);
+// }
+
 for(let i=1;i<11;i++){
-    let str1 = document.createElement("li");
-    let str2 = document.createElement("li");
-    let str3 = document.createElement("li");
-    let str4 = document.createElement("li");
-    let str5 = document.createElement("li");
-    let str6 = document.createElement("li");
-    let str7 = document.createElement("li");
-    let str8 = document.createElement("li");
-    let str9 = document.createElement("li");
-    let str10 = document.createElement("li");
-    let str11 = document.createElement("li");
-    let str12 = document.createElement("li");
-    str1.textContent =`1*${i}=${1*i}`;
-    str2.textContent =`2*${i}=${2*i}`;
-    str3.textContent =`3*${i}=${3*i}`;
-    str4.textContent =`4*${i}=${4*i}`;
-    str5.textContent =`5*${i}=${5*i}`;
-    str6.textContent =`6*${i}=${6*i}`;
-    str7.textContent =`7*${i}=${7*i}`;
-    str8.textContent =`8*${i}=${8*i}`;
-    str9.textContent =`9*${i}=${9*i}`;
-    str10.textContent =`10*${i}=${10*i}`;
-    str11.textContent =`11*${i}=${11*i}`;
-    str12.textContent =`12*${i}=${12*i}`;
-    el.appendChild(str1);
-    el2.appendChild(str2);
-    el3.appendChild(str3);
-    el4.appendChild(str4);
-    el5.appendChild(str5);
-    el6.appendChild(str6);
-    el7.appendChild(str7);
-    el8.appendChild(str8);
-    el9.appendChild(str9);
-    el10.appendChild(str10);
-    el11.appendChild(str11);
-    el12.appendChild(str12);
+    for(let t=1;t<13;t++){
+    let el=document.querySelector(`#ul${t}`);
+    let str=document.createElement("li");
+    str.textContent=`${t}*${i}=${t*i}`;
+    el.appendChild(str);
+    }
 }
 </script>
 <style>
@@ -138,10 +146,6 @@ h1{
 }
 h2{
     font-size: 50px;
-}
-.div2{
-    width: 100px;
-    margin: auto;
 }
 .div h2{
     text-align: center;
